@@ -1,14 +1,11 @@
-# pending_billing
+# Sobre
 
 Este projeto foi construído utilizando o GetX visando a construção de uma aplicação modular e sucinta com um código limpo e manutenível.
 
 ## Video de apresentação:
 
-<p align="center">
-<video width="300" controls>
-  <source src="https://raw.githubusercontent.com/welitonsousa/pending_billing/main/assets/videos/preview.mp4" type="video/mp4">
-</video>
-</p>
+<a href="https://raw.githubusercontent.com/welitonsousa/pending_billing/main/assets/videos/preview.mp4
+" target="_blank">Video demonstração</a>
 
 
 ## Capturas de tela:
