@@ -1,16 +1,33 @@
 # pending_billing
 
-A new Flutter project.
+Este projeto foi construído utilizando o GetX visando a construção de uma aplicação modular e sucinta com um código limpo e manutenível.
 
-## Getting Started
+## Video de apresentação:
 
-This project is a starting point for a Flutter application.
+<p align="center">
+<video width="300" controls>
+  <source src="https://raw.githubusercontent.com/welitonsousa/pending_billing/main/assets/videos/preview.mp4" type="video/mp4">
+</video>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Capturas de tela:
+<p align="center">
+  <img width="300" src="https://raw.githubusercontent.com/welitonsousa/pending_billing/main/assets/screenshots/dark_en_us.png">
+  <img width="300" src="https://raw.githubusercontent.com/welitonsousa/pending_billing/main/assets/screenshots/white_pt_br.png">
+ 
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features:
+- Dark Mode
+- Light Mode
+- Suporte ao Idioma Português
+- Suporte ao Idioma Ingles
+
+
+
+<br>
+<br>
+<p align="center">
+   Feito com ❤️ by <a target="_blank" href="https://welionsousa.vercel.app"><b>Weliton Sousa</b></a>
+</p>

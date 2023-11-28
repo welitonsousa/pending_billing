@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:pending_billing/core/l10n/translate_key.dart';
 import 'package:pending_billing/models/billing/company_model.dart';
 import 'package:pending_billing/models/billing/manager_model.dart';
@@ -12,7 +13,7 @@ class BillingRepositoryImpl extends BillingRepository {
     return List.generate(
         10,
         (index) =>
-            CompanyModel(id: index, name: '${TranslateKey.company} $index'));
+            CompanyModel(id: index, name: '${TranslateKey.company.tr} $index'));
   }
 
   @override
@@ -20,7 +21,7 @@ class BillingRepositoryImpl extends BillingRepository {
     return List.generate(
         10,
         (index) =>
-            ManagerModel(id: index, name: '${TranslateKey.manager} $index'));
+            ManagerModel(id: index, name: '${TranslateKey.manager.tr} $index'));
   }
 
   @override
@@ -28,7 +29,7 @@ class BillingRepositoryImpl extends BillingRepository {
     return List.generate(
         10,
         (index) =>
-            PartnerModel(id: index, name: '${TranslateKey.partner} $index'));
+            PartnerModel(id: index, name: '${TranslateKey.partner.tr} $index'));
   }
 
   @override
@@ -36,7 +37,7 @@ class BillingRepositoryImpl extends BillingRepository {
     return List.generate(
         10,
         (index) => ProcedureLineModel(
-            id: index, name: '${TranslateKey.procedure} $index'));
+            id: index, name: '${TranslateKey.procedure.tr} $index'));
   }
 
   @override
@@ -44,6 +45,6 @@ class BillingRepositoryImpl extends BillingRepository {
     return List.generate(
         10,
         (index) => RepresentativeCodeModel(
-            id: index, name: '${TranslateKey.representativeCode} $index'));
+            id: index, name: '${TranslateKey.representativeCode.tr} $index'));
   }
 }

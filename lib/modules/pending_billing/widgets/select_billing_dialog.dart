@@ -34,7 +34,8 @@ class _SelectBillingDialogState extends State<SelectBillingDialog> {
   }
 
   List<BillingEntity> get _filteredList => widget.list
-      .where((e) => e.name.contains(_searchController.text))
+      .where((e) =>
+          e.name.toLowerCase().contains(_searchController.text.toLowerCase()))
       .toList();
 
   @override
@@ -66,7 +67,7 @@ class _SelectBillingDialogState extends State<SelectBillingDialog> {
                       title: Text(item.name),
                       onTap: () {
                         widget.onChange(item);
-                        Navigator.of(context).pop();
+                        Get.back(result: item);
                       },
                     );
                   },

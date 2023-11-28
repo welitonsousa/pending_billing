@@ -28,17 +28,32 @@ class BillingFormInput extends StatefulWidget {
 
 class _BillingFormInputState extends State<BillingFormInput> {
   final debounce = Debounce();
-  void onTap() {
-    Get.dialog(SelectBillingDialog(
+  final _textController = TextEditingController();
+
+  @override
+  void dispose() {
+    _textController.dispose();
+    super.dispose();
+  }
+
+  Future<void> onTap() async {
+    final res = await Get.dialog(SelectBillingDialog(
       list: widget.listItems,
       onChange: widget.onChange,
     ));
+    if (res is BillingEntity) {
+      _textController.text = res.id.toString();
+    }
   }
 
   void verifyValue(String? id) {
     if (id == null) return;
     final index = widget.listItems.indexWhere((e) => e.id.toString() == id);
-    if (index != -1) widget.onChange(widget.listItems[index]);
+    if (index != -1) {
+      final item = widget.listItems[index];
+      widget.onChange(item);
+      _textController.text = item.id.toString();
+    }
   }
 
   @override
@@ -48,6 +63,7 @@ class _BillingFormInputState extends State<BillingFormInput> {
         Expanded(
           child: TextFormField(
             keyboardType: TextInputType.number,
+            controller: _textController,
             textInputAction: TextInputAction.next,
             inputFormatters: [
               FilteringTextInputFormatter.digitsOnly,

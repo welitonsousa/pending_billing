@@ -38,7 +38,7 @@ class FakeInputWidget extends StatelessWidget {
               ),
             ),
             Container(
-              color: context.theme.colorScheme.background,
+              color: context.theme.scaffoldBackgroundColor,
               padding: const EdgeInsets.symmetric(horizontal: 6),
               margin: const EdgeInsets.symmetric(horizontal: 6),
               child: Text(label),

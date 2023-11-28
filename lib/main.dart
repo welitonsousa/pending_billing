@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRouters.PENDING_BILLING,
       getPages: AppRouters.routers,
       translations: TranslationService(),
-      locale: TranslationService.fallbackLocale,
+      locale: Get.deviceLocale,
+      fallbackLocale: Get.fallbackLocale,
       debugShowCheckedModeBanner: false,
     );
   }
